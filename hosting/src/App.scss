@@ -1,7 +1,5 @@
- 
- 
 /**
- * Copyright 2015 Google Inc. All Rights Reserved.
+ * Copyright 2023 Google Inc. All Rights Reserved.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,6 +13,15 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+@use '@material/button/mdc-button';
+@use '@material/button';
+@use '@material/elevation/elevation-theme';
+@use '@material/ripple/ripple-theme';
+@use '@material/theme/state';
+@use "@material/card";
+
+@include card.core-styles;
+
  html,
  body {
    font-family: 'Roboto', 'Helvetica', sans-serif;
@@ -443,8 +450,6 @@
      rgba(0, 0, 0, 1) 100%
    );
    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-   filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#000000', GradientType=0);
-   /* IE6-9 */
  }
  
  #restaurant-header .details {
@@ -510,4 +515,8 @@
  
  aside textarea:focus {
    outline: none;
+ }
+
+ .Card {
+  float: left;
  }

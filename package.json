@@ -11,5 +11,9 @@
   "devDependencies": {
     "eslint": "^4.17.0",
     "prettier": "^1.5.3"
+  },
+  "dependencies": {
+    "firebase": "^9.15.0",
+    "reactfire": "^4.2.2"
   }
 }
